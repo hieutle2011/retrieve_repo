@@ -17,6 +17,7 @@ def githubrepos(username):
 def main():
     if len(sys.argv) > 1:
         username = sys.argv[1]
+        print('Number of repos is: ' + str(len(githubrepos(username))))
         print(githubrepos(username))
     else:
         print('No username provided')
